@@ -4,6 +4,7 @@ import data from "../data"
 export default function Card() {
     const travelData = data.map((item) => {
         return (
+            <>
             <div className="card">
                 <div className="image--section">
                     <img className="image" src={`../../public/images/${item.img}`} alt={item.img} />
@@ -19,6 +20,8 @@ export default function Card() {
                     <p className="desc">{item.description}</p>
                 </div>
             </div>
+            {item.id !== data[data.length - 1].id  && <hr></hr>}
+            </>
         )
     })
     return (

@@ -123,6 +123,18 @@ a, .upper {
   font-size: 0.80rem;
 }
 
+.desc {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+hr {
+  border-top: 1px solid #e5e5e5;
+  width: 90%;
+  margin: auto;
+}
+
 
 
 
